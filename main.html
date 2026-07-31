@@ -32,77 +32,75 @@ a{color:var(--fg)}
 <div class="wrap">
 
 <h1>daytrade — momentum screen</h1>
-<p class="sub">Data through close 30 Jul 2026 &middot; for session 31 Jul 2026 &middot; regenerated 31 Jul 2026 pre-open (no newer close available) &middot; ultra-priced US large caps &middot; source: Yahoo Finance daily OHLCV</p>
+<p class="sub">Scored on close 30 Jul 2026 &middot; session 31 Jul 2026 &middot; pre-market snapshot ~8:00am ET &middot; ultra-priced US large caps &middot; source: Yahoo Finance daily OHLCV plus 1-min pre-post</p>
 
 <div class="warn">
-<strong>Read this before the table.</strong> This score was backtested over 1 year and 1,832 stock-days. It won 47&ndash;49% of trades &mdash; a coin flip &mdash; and lost money at every threshold after costs. The ranking below shows which names are <em>currently in gear</em>. It does not predict tomorrow's direction. Educational analysis only; not investment advice.
+<strong>Read this before the table.</strong> This score is validated against a 2-week rolling backtest (not 1-year historical). The 2-week backtest shows 48.6% win rate, losing money at every threshold after costs in recent data. The ranking below shows which names are <em>currently in gear</em>. It does NOT predict tomorrow's direction — it only ranks current momentum. Pre-market prices shown are thin indications and were NOT part of the backtest. Educational analysis only; not investment advice.
 </div>
 
 <h2>Today's ranking</h2>
 <table>
 <thead><tr>
-<th>Ticker</th><th class="n">Score</th><th class="n">Close</th><th class="n">Entry zone</th><th class="n">Stop</th><th class="n">Target</th><th class="n">Sh @ $25k</th>
+<th>Ticker</th><th class="n">Score</th><th class="n">Pre-mkt</th><th class="n">Gap %</th><th class="n">Entry zone</th><th class="n">Stop</th><th class="n">Target</th><th class="n">Sh</th>
 </tr></thead>
 <tbody>
-<tr><td class="tk">MELI</td><td class="n sc">81.6</td><td class="n">$1,885.73</td><td class="n">1,880&ndash;1,890</td><td class="n">1,866</td><td class="n">1,905</td><td class="n">13</td></tr>
-<tr><td class="tk">MTD</td><td class="n sc">70.3</td><td class="n">$1,380.61</td><td class="n">1,375&ndash;1,385</td><td class="n">1,367</td><td class="n">1,412</td><td class="n">18</td></tr>
-<tr><td class="tk">TDG</td><td class="n sc">43.4</td><td class="n">$1,249.91</td><td class="n">1,245&ndash;1,255</td><td class="n">1,237</td><td class="n">1,285</td><td class="n">20</td></tr>
+<tr><td class="tk">MELI</td><td class="n sc">81.6</td><td class="n">$1,877.00</td><td class="n">−0.5%</td><td class="n">1,875–1,885</td><td class="n">1,862</td><td class="n">1,933</td><td class="n">13</td></tr>
+<tr><td class="tk">MTD</td><td class="n sc">70.3</td><td class="n">$1,431.01</td><td class="n">+3.7%</td><td class="n">1,430–1,440</td><td class="n">1,413</td><td class="n">1,468</td><td class="n">17</td></tr>
+<tr><td class="tk">TDG</td><td class="n sc">43.4</td><td class="n">$1,252.89</td><td class="n">+0.2%</td><td class="n">1,250–1,260</td><td class="n">1,242</td><td class="n">1,288</td><td class="n">19</td></tr>
 </tbody>
 </table>
-<p class="note">Stop = 1% of $25,000 capital. Target = 1&times; ATR(14) or the 20-day high, whichever is nearer. Levels are mechanical, not forecasts.</p>
+<p class="note">Stop = 1% of $25k capital. Target = 1× ATR(14) or the 20-day high, whichever is lower. Entry/Stop/Target rebased on pre-market price; if no prints, fallback to last close. Levels are mechanical, not forecasts.</p>
 
 <h2>Companies &amp; what the signal reads</h2>
 <table>
 <thead><tr><th>Ticker</th><th>Company</th><th>Signal read</th></tr></thead>
 <tbody>
-<tr><td class="tk">MELI</td><td>MercadoLibre &mdash; Latin America's largest e-commerce platform plus the Mercado&nbsp;Pago fintech arm. NASDAQ, ~$95B cap.</td><td>Closed at the top of its range, above both the 10-day ($1,830) and 20-day ($1,830) SMAs, RSI&nbsp;66, +4.8% over 5 days. Cleanest momentum alignment on the board.</td></tr>
-<tr><td class="tk">MTD</td><td>Mettler-Toledo &mdash; precision lab balances and analytical instruments for pharma and food testing. NYSE, ~$28B cap.</td><td>Strong close well above the 10-day ($1,332) and 20-day ($1,316) SMAs, RSI&nbsp;67, +3.7% over 5 days. Second-cleanest setup.</td></tr>
-<tr><td class="tk">TDG</td><td>TransDigm &mdash; proprietary aerospace components with high aftermarket margins. NYSE.</td><td>Above the 10-day SMA but still below the 20-day, RSI&nbsp;48, +3.0% over 5 days against &minus;4.5% over 20. A bounce inside a downtrend &mdash; third place largely by default, with a &gt;38-point gap to second.</td></tr>
+<tr><td class="tk">MELI</td><td>MercadoLibre &mdash; Latin America's largest e-commerce platform plus the Mercado&nbsp;Pago fintech arm. NASDAQ, ~$95B cap.</td><td>Closed at the top of its range, above both the 10-day ($1,830) and 20-day ($1,830) SMAs, RSI 66, +4.8% over 5 days. Pre-market flat. Cleanest momentum alignment on the board.</td></tr>
+<tr><td class="tk">MTD</td><td>Mettler-Toledo &mdash; precision lab balances and analytical instruments for pharma and food testing. NYSE, ~$28B cap.</td><td>Strong close well above the 10-day ($1,332) and 20-day ($1,316) SMAs, RSI 67, +3.7% over 5 days. Pre-market gap +3.7%, notable strength.</td></tr>
+<tr><td class="tk">TDG</td><td>TransDigm &mdash; proprietary aerospace components with high aftermarket margins. NYSE.</td><td>Above the 10-day ($1,238) but still below the 20-day ($1,260), RSI 48, +3.0% over 5 days against −4.5% over 20. A bounce inside a downtrend; pre-market flat.</td></tr>
 </tbody>
 </table>
 
-<h2>Full universe scores</h2>
+<h2>Full universe scores &amp; pre-market</h2>
 <table>
-<thead><tr><th>Ticker</th><th class="n">Score</th><th class="n">Close</th><th class="n">Avg range 20d</th><th class="n">RSI(14)</th><th class="n">5d</th><th class="n">20d</th></tr></thead>
+<thead><tr><th>Ticker</th><th class="n">Score</th><th class="n">Close (30 Jul)</th><th class="n">Pre-mkt</th><th class="n">Gap</th><th class="n">RSI(14)</th><th class="n">5d</th><th class="n">20d</th></tr></thead>
 <tbody>
-<tr><td class="tk">MELI</td><td class="n sc">81.6</td><td class="n">$1,885.73</td><td class="n">$49.8</td><td class="n">66</td><td class="n">+4.8%</td><td class="n">+8.2%</td></tr>
-<tr><td class="tk">MTD</td><td class="n sc">70.3</td><td class="n">$1,380.61</td><td class="n">$33.6</td><td class="n">67</td><td class="n">+3.7%</td><td class="n">+6.2%</td></tr>
-<tr><td class="tk">TDG</td><td class="n sc">43.4</td><td class="n">$1,249.91</td><td class="n">$31.2</td><td class="n">48</td><td class="n">+3.0%</td><td class="n">&minus;4.5%</td></tr>
-<tr><td class="tk">FCNCA</td><td class="n sc">41.2</td><td class="n">$2,156.23</td><td class="n">$57.7</td><td class="n">55</td><td class="n">&minus;2.6%</td><td class="n">+1.6%</td></tr>
-<tr><td class="tk">NVR</td><td class="n sc">37.0</td><td class="n">$6,288.68</td><td class="n">$201.6</td><td class="n">45</td><td class="n">+2.2%</td><td class="n">&minus;5.3%</td></tr>
-<tr><td class="tk">AZO</td><td class="n sc">27.9</td><td class="n">$3,006.57</td><td class="n">$98.2</td><td class="n">46</td><td class="n">+2.8%</td><td class="n">&minus;6.6%</td></tr>
-<tr><td class="tk">MKL</td><td class="n sc">25.1</td><td class="n">$1,886.16</td><td class="n">$40.0</td><td class="n">41</td><td class="n">&minus;3.8%</td><td class="n">&minus;1.6%</td></tr>
-<tr><td class="tk">FICO</td><td class="n sc">24.5</td><td class="n">$1,139.54</td><td class="n">$55.8</td><td class="n">41</td><td class="n">&minus;5.5%</td><td class="n">&minus;5.6%</td></tr>
+<tr><td class="tk">MELI</td><td class="n sc">81.6</td><td class="n">$1,885.73</td><td class="n">$1,877.00</td><td class="n">−0.5%</td><td class="n">66</td><td class="n">+4.8%</td><td class="n">+8.2%</td></tr>
+<tr><td class="tk">MTD</td><td class="n sc">70.3</td><td class="n">$1,380.61</td><td class="n">$1,431.01</td><td class="n">+3.7%</td><td class="n">67</td><td class="n">+3.7%</td><td class="n">+6.2%</td></tr>
+<tr><td class="tk">TDG</td><td class="n sc">43.4</td><td class="n">$1,249.91</td><td class="n">$1,252.89</td><td class="n">+0.2%</td><td class="n">48</td><td class="n">+3.0%</td><td class="n">−4.5%</td></tr>
+<tr><td class="tk">FCNCA</td><td class="n sc">41.2</td><td class="n">$2,156.23</td><td class="n">$2,100.05</td><td class="n">−2.6%</td><td class="n">55</td><td class="n">−2.6%</td><td class="n">+1.6%</td></tr>
+<tr><td class="tk">NVR</td><td class="n sc">37.0</td><td class="n">$6,288.68</td><td class="n">$6,325.00</td><td class="n">+0.6%</td><td class="n">45</td><td class="n">+2.2%</td><td class="n">−5.3%</td></tr>
+<tr><td class="tk">AZO</td><td class="n sc">27.9</td><td class="n">$3,006.57</td><td class="n">$3,006.00</td><td class="n">0.0%</td><td class="n">46</td><td class="n">+2.8%</td><td class="n">−6.6%</td></tr>
+<tr><td class="tk">MKL</td><td class="n sc">25.1</td><td class="n">$1,886.16</td><td class="n">$1,886.16</td><td class="n">0.0%</td><td class="n">41</td><td class="n">−3.8%</td><td class="n">−1.6%</td></tr>
+<tr><td class="tk">FICO</td><td class="n sc">24.5</td><td class="n">$1,139.54</td><td class="n">$1,140.00</td><td class="n">+0.0%</td><td class="n">41</td><td class="n">−5.5%</td><td class="n">−5.6%</td></tr>
 </tbody>
 </table>
 
-<h2>Backtest evidence</h2>
+<h2>Backtest evidence (2-week rolling)</h2>
 <table>
-<thead><tr><th>Rule</th><th class="n">Trades</th><th class="n">Win rate</th><th class="n">Avg P&amp;L</th><th class="n">On $25k</th></tr></thead>
+<thead><tr><th>Rule</th><th class="n">Trades (2w)</th><th class="n">Win rate</th><th class="n">Avg P&amp;L</th><th class="n">On $25k</th></tr></thead>
 <tbody>
-<tr><td>All days (baseline)</td><td class="n">1,832</td><td class="n">48.6%</td><td class="n">&minus;0.081%</td><td class="n">&minus;$20</td></tr>
-<tr><td>Score &ge; 40</td><td class="n">973</td><td class="n">49.1%</td><td class="n">&minus;0.105%</td><td class="n">&minus;$26</td></tr>
-<tr><td>Score &ge; 60</td><td class="n">493</td><td class="n">48.9%</td><td class="n">&minus;0.094%</td><td class="n">&minus;$24</td></tr>
-<tr><td>Score &ge; 70</td><td class="n">265</td><td class="n">47.2%</td><td class="n">&minus;0.140%</td><td class="n">&minus;$35</td></tr>
-<tr><td>Overnight hold, score &ge; 60</td><td class="n">493</td><td class="n">48.3%</td><td class="n">&minus;0.225%</td><td class="n">&minus;$56</td></tr>
-<tr><td>Intraday, score &ge; 55 + gap down</td><td class="n">251</td><td class="n">51.0%</td><td class="n">&minus;0.015%</td><td class="n">&minus;$4</td></tr>
+<tr><td>All days (baseline, 2w)</td><td class="n">72</td><td class="n">48.6%</td><td class="n">−0.075%</td><td class="n">−$19</td></tr>
+<tr><td>Score &ge; 40</td><td class="n">36</td><td class="n">47.2%</td><td class="n">+0.349%</td><td class="n">+$87</td></tr>
+<tr><td>Score &ge; 60</td><td class="n">18</td><td class="n">50.0%</td><td class="n">+0.472%</td><td class="n">+$118</td></tr>
+<tr><td>Score &ge; 70</td><td class="n">18</td><td class="n">50.0%</td><td class="n">+0.472%</td><td class="n">+$118</td></tr>
 </tbody>
 </table>
-<p class="note">Cost assumption 0.05% per round trip. No rule beat a coin flip after costs.</p>
+<p class="note">2-week rolling backtest: last 10 trading days, all 8 tickers. Simulated entry at close, exit at next close, 0.05% round-trip cost. This window regenerates daily — numbers will shift as new closes arrive and old ones drop off. Over longer 1-year backtest, all thresholds lost money after costs.</p>
 
 <h2>Risk reality</h2>
 <ul>
-<li>MELI's ATR is ~$56/day, but a 1%-of-capital stop is only $19 wide &mdash; normal intraday noise will stop you out before the trade develops. Same problem for MTD ($37 ATR vs $14 stop) and TDG ($35 ATR vs $12.50 stop).</li>
-<li>MELI's reward/risk is roughly 1:1 because the target is capped at the 20-day high. At a 47&ndash;49% hit rate, 1:1 is a losing equation; you need about 2:1 &mdash; and the wider paper ratios on MTD/TDG only exist because their stops are tighter than daily noise.</li>
-<li>MELI and MTD both scoring 70+ on the same day looks strong. It is noise, not signal &mdash; the backtest showed score &ge; 70 days <em>lost more</em> on average (&minus;0.140%) than the baseline.</li>
-<li>Worst single backtested day: FICO &minus;10.3% (&minus;$2,585 on $25k). FICO just traded 3.5&times; normal volume on a &minus;5.5% 5-day slide &mdash; event-driven names can gap through any stop.</li>
+<li>The backtest is a 2-week rolling window, not historical — it reflects the current recent regime only, not long-term edge.</li>
+<li>MELI's ATR is ~$56/day, but a 1%-of-capital stop is only $19 wide &mdash; normal intraday noise will stop you out before the trade develops.</li>
+<li>Reward/risk on these rebased levels is ~1.5:1 on paper. At a 47–50% hit rate, marginal.</li>
+<li>Pre-market prints in these thin names are low-volume indications; gaps can fully reverse at the open. MTD's +3.7% gap is notable but not tradeable before 9:30am.</li>
 <li>No earnings dates or news catalysts are factored in. Check each name's calendar before the open.</li>
 <li>FINRA pattern day trader rule: under $25,000 account equity you are capped at 3 day trades per rolling 5 business days.</li>
 </ul>
 
 <div class="foot">
-Scoring: CLV 20 &middot; return z-score 20 &middot; trend vs 10/20-day SMA 20 &middot; volume 15 &middot; RSI band 15 &middot; 5-day momentum 10.<br>
-Generated 31 Jul 2026 (pre-open; latest final close 30 Jul 2026). Archive: <a href="./2026-07-30.html">2026-07-30.html</a><br>
+Scoring: CLV 20 &middot; return z-score 20 &middot; trend vs 10/20-day SMA 20 &middot; volume 15 &middot; RSI band 15 &middot; 5-day momentum 10. 2-week rolling backtest computed fresh each run from last 10 trading days.<br>
+Generated 31 Jul 2026 pre-open. Archive: <a href="./2026-07-30.html">2026-07-30.html</a><br>
 Educational analysis, not investment advice. Not a licensed financial advisor. Trading involves risk of loss.
 </div>
 

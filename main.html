@@ -32,7 +32,7 @@ a{color:var(--fg)}
 <div class="wrap">
 
 <h1>daytrade — momentum screen</h1>
-<p class="sub">Data through close 30 Jul 2026 &middot; for session 31 Jul 2026 &middot; ultra-priced US large caps &middot; source: Yahoo Finance daily OHLCV</p>
+<p class="sub">Data through close 30 Jul 2026 &middot; for session 31 Jul 2026 &middot; regenerated 31 Jul 2026 pre-open (no newer close available) &middot; ultra-priced US large caps &middot; source: Yahoo Finance daily OHLCV</p>
 
 <div class="warn">
 <strong>Read this before the table.</strong> This score was backtested over 1 year and 1,832 stock-days. It won 47&ndash;49% of trades &mdash; a coin flip &mdash; and lost money at every threshold after costs. The ranking below shows which names are <em>currently in gear</em>. It does not predict tomorrow's direction. Educational analysis only; not investment advice.
@@ -44,9 +44,9 @@ a{color:var(--fg)}
 <th>Ticker</th><th class="n">Score</th><th class="n">Close</th><th class="n">Entry zone</th><th class="n">Stop</th><th class="n">Target</th><th class="n">Sh @ $25k</th>
 </tr></thead>
 <tbody>
-<tr><td class="tk">MELI</td><td class="n sc">81.7</td><td class="n">$1,885.73</td><td class="n">1,880&ndash;1,890</td><td class="n">1,866</td><td class="n">1,905</td><td class="n">13</td></tr>
-<tr><td class="tk">MTD</td><td class="n sc">69.1</td><td class="n">$1,380.61</td><td class="n">1,375&ndash;1,385</td><td class="n">1,367</td><td class="n">1,412</td><td class="n">18</td></tr>
-<tr><td class="tk">FCNCA</td><td class="n sc">41.1</td><td class="n">$2,156.23</td><td class="n">2,150&ndash;2,160</td><td class="n">2,133</td><td class="n">2,217</td><td class="n">11</td></tr>
+<tr><td class="tk">MELI</td><td class="n sc">81.6</td><td class="n">$1,885.73</td><td class="n">1,880&ndash;1,890</td><td class="n">1,866</td><td class="n">1,905</td><td class="n">13</td></tr>
+<tr><td class="tk">MTD</td><td class="n sc">70.3</td><td class="n">$1,380.61</td><td class="n">1,375&ndash;1,385</td><td class="n">1,367</td><td class="n">1,412</td><td class="n">18</td></tr>
+<tr><td class="tk">TDG</td><td class="n sc">43.4</td><td class="n">$1,249.91</td><td class="n">1,245&ndash;1,255</td><td class="n">1,237</td><td class="n">1,285</td><td class="n">20</td></tr>
 </tbody>
 </table>
 <p class="note">Stop = 1% of $25,000 capital. Target = 1&times; ATR(14) or the 20-day high, whichever is nearer. Levels are mechanical, not forecasts.</p>
@@ -55,9 +55,9 @@ a{color:var(--fg)}
 <table>
 <thead><tr><th>Ticker</th><th>Company</th><th>Signal read</th></tr></thead>
 <tbody>
-<tr><td class="tk">MELI</td><td>MercadoLibre &mdash; Latin America's largest e-commerce platform plus the Mercado&nbsp;Pago fintech arm. NASDAQ, ~$95B cap.</td><td>Closed at the top of its range, above both the 10-day ($1,830) and 20-day ($1,830) SMAs, RSI&nbsp;57, +4.8% over 5 days. Cleanest momentum alignment on the board.</td></tr>
-<tr><td class="tk">MTD</td><td>Mettler-Toledo &mdash; precision lab balances and analytical instruments for pharma and food testing. NYSE, ~$28B cap.</td><td>Strong close well above the 10-day ($1,332) and 20-day ($1,316) SMAs, RSI&nbsp;66. The only top-3 name with a positive backtest average (+0.13% over 75 trades).</td></tr>
-<tr><td class="tk">FCNCA</td><td>First Citizens BancShares &mdash; Raleigh NC bank holding company; absorbed Silicon Valley Bank's assets in 2023. NASDAQ, ~$28B cap.</td><td>Above the 20-day SMA with RSI&nbsp;56, but closed near the day's <em>low</em> and 5-day momentum is negative. Third place largely by default.</td></tr>
+<tr><td class="tk">MELI</td><td>MercadoLibre &mdash; Latin America's largest e-commerce platform plus the Mercado&nbsp;Pago fintech arm. NASDAQ, ~$95B cap.</td><td>Closed at the top of its range, above both the 10-day ($1,830) and 20-day ($1,830) SMAs, RSI&nbsp;66, +4.8% over 5 days. Cleanest momentum alignment on the board.</td></tr>
+<tr><td class="tk">MTD</td><td>Mettler-Toledo &mdash; precision lab balances and analytical instruments for pharma and food testing. NYSE, ~$28B cap.</td><td>Strong close well above the 10-day ($1,332) and 20-day ($1,316) SMAs, RSI&nbsp;67, +3.7% over 5 days. Second-cleanest setup.</td></tr>
+<tr><td class="tk">TDG</td><td>TransDigm &mdash; proprietary aerospace components with high aftermarket margins. NYSE.</td><td>Above the 10-day SMA but still below the 20-day, RSI&nbsp;48, +3.0% over 5 days against &minus;4.5% over 20. A bounce inside a downtrend &mdash; third place largely by default, with a &gt;38-point gap to second.</td></tr>
 </tbody>
 </table>
 
@@ -65,14 +65,14 @@ a{color:var(--fg)}
 <table>
 <thead><tr><th>Ticker</th><th class="n">Score</th><th class="n">Close</th><th class="n">Avg range 20d</th><th class="n">RSI(14)</th><th class="n">5d</th><th class="n">20d</th></tr></thead>
 <tbody>
-<tr><td class="tk">MELI</td><td class="n sc">81.7</td><td class="n">$1,885.73</td><td class="n">$49.8</td><td class="n">57</td><td class="n">+4.8%</td><td class="n">+8.2%</td></tr>
-<tr><td class="tk">MTD</td><td class="n sc">69.1</td><td class="n">$1,380.61</td><td class="n">$33.6</td><td class="n">66</td><td class="n">+3.7%</td><td class="n">+6.2%</td></tr>
-<tr><td class="tk">TDG</td><td class="n sc">42.4</td><td class="n">$1,249.91</td><td class="n">$31.2</td><td class="n">43</td><td class="n">+3.0%</td><td class="n">&minus;4.5%</td></tr>
-<tr><td class="tk">FCNCA</td><td class="n sc">41.1</td><td class="n">$2,156.23</td><td class="n">$57.7</td><td class="n">56</td><td class="n">&minus;2.6%</td><td class="n">+1.6%</td></tr>
-<tr><td class="tk">NVR</td><td class="n sc">34.5</td><td class="n">$6,288.68</td><td class="n">$200.8</td><td class="n">44</td><td class="n">+2.2%</td><td class="n">&minus;5.3%</td></tr>
-<tr><td class="tk">AZO</td><td class="n sc">27.8</td><td class="n">$3,006.57</td><td class="n">$97.2</td><td class="n">46</td><td class="n">+2.8%</td><td class="n">&minus;6.6%</td></tr>
+<tr><td class="tk">MELI</td><td class="n sc">81.6</td><td class="n">$1,885.73</td><td class="n">$49.8</td><td class="n">66</td><td class="n">+4.8%</td><td class="n">+8.2%</td></tr>
+<tr><td class="tk">MTD</td><td class="n sc">70.3</td><td class="n">$1,380.61</td><td class="n">$33.6</td><td class="n">67</td><td class="n">+3.7%</td><td class="n">+6.2%</td></tr>
+<tr><td class="tk">TDG</td><td class="n sc">43.4</td><td class="n">$1,249.91</td><td class="n">$31.2</td><td class="n">48</td><td class="n">+3.0%</td><td class="n">&minus;4.5%</td></tr>
+<tr><td class="tk">FCNCA</td><td class="n sc">41.2</td><td class="n">$2,156.23</td><td class="n">$57.7</td><td class="n">55</td><td class="n">&minus;2.6%</td><td class="n">+1.6%</td></tr>
+<tr><td class="tk">NVR</td><td class="n sc">37.0</td><td class="n">$6,288.68</td><td class="n">$201.6</td><td class="n">45</td><td class="n">+2.2%</td><td class="n">&minus;5.3%</td></tr>
+<tr><td class="tk">AZO</td><td class="n sc">27.9</td><td class="n">$3,006.57</td><td class="n">$98.2</td><td class="n">46</td><td class="n">+2.8%</td><td class="n">&minus;6.6%</td></tr>
+<tr><td class="tk">MKL</td><td class="n sc">25.1</td><td class="n">$1,886.16</td><td class="n">$40.0</td><td class="n">41</td><td class="n">&minus;3.8%</td><td class="n">&minus;1.6%</td></tr>
 <tr><td class="tk">FICO</td><td class="n sc">24.5</td><td class="n">$1,139.54</td><td class="n">$55.8</td><td class="n">41</td><td class="n">&minus;5.5%</td><td class="n">&minus;5.6%</td></tr>
-<tr><td class="tk">MKL</td><td class="n sc">23.6</td><td class="n">$1,886.16</td><td class="n">$39.9</td><td class="n">42</td><td class="n">&minus;3.8%</td><td class="n">&minus;1.6%</td></tr>
 </tbody>
 </table>
 
@@ -92,16 +92,17 @@ a{color:var(--fg)}
 
 <h2>Risk reality</h2>
 <ul>
-<li>MELI's ATR is ~$54/day, but a 1%-of-capital stop is only $19 wide &mdash; normal intraday noise will stop you out before the trade develops.</li>
-<li>Reward/risk on these levels is roughly 1:1. At a 47&ndash;49% hit rate, 1:1 is a losing equation; you need about 2:1.</li>
-<li>Worst single backtested day: FICO &minus;10.3% (&minus;$2,585 on $25k).</li>
+<li>MELI's ATR is ~$56/day, but a 1%-of-capital stop is only $19 wide &mdash; normal intraday noise will stop you out before the trade develops. Same problem for MTD ($37 ATR vs $14 stop) and TDG ($35 ATR vs $12.50 stop).</li>
+<li>MELI's reward/risk is roughly 1:1 because the target is capped at the 20-day high. At a 47&ndash;49% hit rate, 1:1 is a losing equation; you need about 2:1 &mdash; and the wider paper ratios on MTD/TDG only exist because their stops are tighter than daily noise.</li>
+<li>MELI and MTD both scoring 70+ on the same day looks strong. It is noise, not signal &mdash; the backtest showed score &ge; 70 days <em>lost more</em> on average (&minus;0.140%) than the baseline.</li>
+<li>Worst single backtested day: FICO &minus;10.3% (&minus;$2,585 on $25k). FICO just traded 3.5&times; normal volume on a &minus;5.5% 5-day slide &mdash; event-driven names can gap through any stop.</li>
 <li>No earnings dates or news catalysts are factored in. Check each name's calendar before the open.</li>
 <li>FINRA pattern day trader rule: under $25,000 account equity you are capped at 3 day trades per rolling 5 business days.</li>
 </ul>
 
 <div class="foot">
 Scoring: CLV 20 &middot; return z-score 20 &middot; trend vs 10/20-day SMA 20 &middot; volume 15 &middot; RSI band 15 &middot; 5-day momentum 10.<br>
-Generated 30 Jul 2026. Archive: <a href="./2026-07-30.html">2026-07-30.html</a><br>
+Generated 31 Jul 2026 (pre-open; latest final close 30 Jul 2026). Archive: <a href="./2026-07-30.html">2026-07-30.html</a><br>
 Educational analysis, not investment advice. Not a licensed financial advisor. Trading involves risk of loss.
 </div>
 

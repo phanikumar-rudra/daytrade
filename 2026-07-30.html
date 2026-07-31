@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>daytrade — momentum screen</title>
+<style>
+:root{--fg:#111;--mut:#666;--line:#e5e5e5;--bg:#fff;--warn:#fdf6e3;--warnb:#e8d9a8}
+*{box-sizing:border-box}
+body{margin:0;padding:48px 24px 80px;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased}
+.wrap{max-width:920px;margin:0 auto}
+h1{font-size:20px;font-weight:600;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:13px;margin:0 0 32px}
+h2{font-size:14px;font-weight:600;margin:40px 0 12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 8px}
+th{text-align:left;font-weight:600;padding:8px 10px;border-bottom:1px solid var(--fg);white-space:nowrap}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tk{font-weight:600}
+.sc{font-variant-numeric:tabular-nums;font-weight:600}
+.note{font-size:12px;color:var(--mut);margin:6px 0 0}
+.warn{background:var(--warn);border:1px solid var(--warnb);padding:14px 16px;margin:24px 0;font-size:13px;line-height:1.65}
+.warn strong{font-weight:600}
+ul{padding-left:18px;margin:8px 0}
+li{margin:5px 0;font-size:13px}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--mut)}
+a{color:var(--fg)}
+@media(max-width:640px){body{padding:28px 16px 60px}table{font-size:12px}td,th{padding:7px 6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>daytrade — momentum screen</h1>
+<p class="sub">Data through close 30 Jul 2026 &middot; for session 31 Jul 2026 &middot; ultra-priced US large caps &middot; source: Yahoo Finance daily OHLCV</p>
+
+<div class="warn">
+<strong>Read this before the table.</strong> This score was backtested over 1 year and 1,832 stock-days. It won 47&ndash;49% of trades &mdash; a coin flip &mdash; and lost money at every threshold after costs. The ranking below shows which names are <em>currently in gear</em>. It does not predict tomorrow's direction. Educational analysis only; not investment advice.
+</div>
+
+<h2>Today's ranking</h2>
+<table>
+<thead><tr>
+<th>Ticker</th><th class="n">Score</th><th class="n">Close</th><th class="n">Entry zone</th><th class="n">Stop</th><th class="n">Target</th><th class="n">Sh @ $25k</th>
+</tr></thead>
+<tbody>
+<tr><td class="tk">MELI</td><td class="n sc">81.7</td><td class="n">$1,885.73</td><td class="n">1,880&ndash;1,890</td><td class="n">1,866</td><td class="n">1,905</td><td class="n">13</td></tr>
+<tr><td class="tk">MTD</td><td class="n sc">69.1</td><td class="n">$1,380.61</td><td class="n">1,375&ndash;1,385</td><td class="n">1,367</td><td class="n">1,412</td><td class="n">18</td></tr>
+<tr><td class="tk">FCNCA</td><td class="n sc">41.1</td><td class="n">$2,156.23</td><td class="n">2,150&ndash;2,160</td><td class="n">2,133</td><td class="n">2,217</td><td class="n">11</td></tr>
+</tbody>
+</table>
+<p class="note">Stop = 1% of $25,000 capital. Target = 1&times; ATR(14) or the 20-day high, whichever is nearer. Levels are mechanical, not forecasts.</p>
+
+<h2>Companies &amp; what the signal reads</h2>
+<table>
+<thead><tr><th>Ticker</th><th>Company</th><th>Signal read</th></tr></thead>
+<tbody>
+<tr><td class="tk">MELI</td><td>MercadoLibre &mdash; Latin America's largest e-commerce platform plus the Mercado&nbsp;Pago fintech arm. NASDAQ, ~$95B cap.</td><td>Closed at the top of its range, above both the 10-day ($1,830) and 20-day ($1,830) SMAs, RSI&nbsp;57, +4.8% over 5 days. Cleanest momentum alignment on the board.</td></tr>
+<tr><td class="tk">MTD</td><td>Mettler-Toledo &mdash; precision lab balances and analytical instruments for pharma and food testing. NYSE, ~$28B cap.</td><td>Strong close well above the 10-day ($1,332) and 20-day ($1,316) SMAs, RSI&nbsp;66. The only top-3 name with a positive backtest average (+0.13% over 75 trades).</td></tr>
+<tr><td class="tk">FCNCA</td><td>First Citizens BancShares &mdash; Raleigh NC bank holding company; absorbed Silicon Valley Bank's assets in 2023. NASDAQ, ~$28B cap.</td><td>Above the 20-day SMA with RSI&nbsp;56, but closed near the day's <em>low</em> and 5-day momentum is negative. Third place largely by default.</td></tr>
+</tbody>
+</table>
+
+<h2>Full universe scores</h2>
+<table>
+<thead><tr><th>Ticker</th><th class="n">Score</th><th class="n">Close</th><th class="n">Avg range 20d</th><th class="n">RSI(14)</th><th class="n">5d</th><th class="n">20d</th></tr></thead>
+<tbody>
+<tr><td class="tk">MELI</td><td class="n sc">81.7</td><td class="n">$1,885.73</td><td class="n">$49.8</td><td class="n">57</td><td class="n">+4.8%</td><td class="n">+8.2%</td></tr>
+<tr><td class="tk">MTD</td><td class="n sc">69.1</td><td class="n">$1,380.61</td><td class="n">$33.6</td><td class="n">66</td><td class="n">+3.7%</td><td class="n">+6.2%</td></tr>
+<tr><td class="tk">TDG</td><td class="n sc">42.4</td><td class="n">$1,249.91</td><td class="n">$31.2</td><td class="n">43</td><td class="n">+3.0%</td><td class="n">&minus;4.5%</td></tr>
+<tr><td class="tk">FCNCA</td><td class="n sc">41.1</td><td class="n">$2,156.23</td><td class="n">$57.7</td><td class="n">56</td><td class="n">&minus;2.6%</td><td class="n">+1.6%</td></tr>
+<tr><td class="tk">NVR</td><td class="n sc">34.5</td><td class="n">$6,288.68</td><td class="n">$200.8</td><td class="n">44</td><td class="n">+2.2%</td><td class="n">&minus;5.3%</td></tr>
+<tr><td class="tk">AZO</td><td class="n sc">27.8</td><td class="n">$3,006.57</td><td class="n">$97.2</td><td class="n">46</td><td class="n">+2.8%</td><td class="n">&minus;6.6%</td></tr>
+<tr><td class="tk">FICO</td><td class="n sc">24.5</td><td class="n">$1,139.54</td><td class="n">$55.8</td><td class="n">41</td><td class="n">&minus;5.5%</td><td class="n">&minus;5.6%</td></tr>
+<tr><td class="tk">MKL</td><td class="n sc">23.6</td><td class="n">$1,886.16</td><td class="n">$39.9</td><td class="n">42</td><td class="n">&minus;3.8%</td><td class="n">&minus;1.6%</td></tr>
+</tbody>
+</table>
+
+<h2>Backtest evidence</h2>
+<table>
+<thead><tr><th>Rule</th><th class="n">Trades</th><th class="n">Win rate</th><th class="n">Avg P&amp;L</th><th class="n">On $25k</th></tr></thead>
+<tbody>
+<tr><td>All days (baseline)</td><td class="n">1,832</td><td class="n">48.6%</td><td class="n">&minus;0.081%</td><td class="n">&minus;$20</td></tr>
+<tr><td>Score &ge; 40</td><td class="n">973</td><td class="n">49.1%</td><td class="n">&minus;0.105%</td><td class="n">&minus;$26</td></tr>
+<tr><td>Score &ge; 60</td><td class="n">493</td><td class="n">48.9%</td><td class="n">&minus;0.094%</td><td class="n">&minus;$24</td></tr>
+<tr><td>Score &ge; 70</td><td class="n">265</td><td class="n">47.2%</td><td class="n">&minus;0.140%</td><td class="n">&minus;$35</td></tr>
+<tr><td>Overnight hold, score &ge; 60</td><td class="n">493</td><td class="n">48.3%</td><td class="n">&minus;0.225%</td><td class="n">&minus;$56</td></tr>
+<tr><td>Intraday, score &ge; 55 + gap down</td><td class="n">251</td><td class="n">51.0%</td><td class="n">&minus;0.015%</td><td class="n">&minus;$4</td></tr>
+</tbody>
+</table>
+<p class="note">Cost assumption 0.05% per round trip. No rule beat a coin flip after costs.</p>
+
+<h2>Risk reality</h2>
+<ul>
+<li>MELI's ATR is ~$54/day, but a 1%-of-capital stop is only $19 wide &mdash; normal intraday noise will stop you out before the trade develops.</li>
+<li>Reward/risk on these levels is roughly 1:1. At a 47&ndash;49% hit rate, 1:1 is a losing equation; you need about 2:1.</li>
+<li>Worst single backtested day: FICO &minus;10.3% (&minus;$2,585 on $25k).</li>
+<li>No earnings dates or news catalysts are factored in. Check each name's calendar before the open.</li>
+<li>FINRA pattern day trader rule: under $25,000 account equity you are capped at 3 day trades per rolling 5 business days.</li>
+</ul>
+
+<div class="foot">
+Scoring: CLV 20 &middot; return z-score 20 &middot; trend vs 10/20-day SMA 20 &middot; volume 15 &middot; RSI band 15 &middot; 5-day momentum 10.<br>
+Generated 30 Jul 2026. Archive: <a href="./2026-07-30.html">2026-07-30.html</a><br>
+Educational analysis, not investment advice. Not a licensed financial advisor. Trading involves risk of loss.
+</div>
+
+</div>
+</body>
+</html>
